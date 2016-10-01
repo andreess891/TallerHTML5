@@ -1,34 +1,26 @@
-youRadioApp.config(function($stateProvider, $urlRouterProvider) {
+preguntadosApp.config(function($stateProvider, $urlRouterProvider) {
   
   $urlRouterProvider.otherwise("/index");
   
   $stateProvider
     .state('index', {
       url: "/index",
-      templateUrl: "template/initial.html"
+      templateUrl: "templates/initial.html"
     })
-    .state('register', {
-      url: "/register",
-      templateUrl: "template/register.html"
+    .state('geographyTest', {
+      url: "/geographyTest",
+      templateUrl: "templates/geographyTest.html"
     })
-    .state('login', {
-      url: "/login",
-      templateUrl: "template/login.html"
+    .state('mathTest', {
+      url: "/mathTest",
+      templateUrl: "templates/mathTest.html"
     })
-    .state('home', {
-      url: "/home",
-      templateUrl: "template/home.html"
+    .state('cineTest', {
+      url: "/cineTest",
+      templateUrl: "templates/cineTest.html"
     })
-    .state('contacts', {
-      url: "/contacts",
-      templateUrl: "template/contacts.html"
-    })
-    .state('radioList', {
-      url: "/radioList",
-      templateUrl: "template/radioList.html"
-    })
-    .state('radioPrograms', {
-      url: "/radioPrograms/:radioId",
-      templateUrl: "template/radioPrograms.html"
+    .state('futbolTest', {
+      url: "/futbolTest",
+      templateUrl: "templates/futbolTest.html"
     });
 });

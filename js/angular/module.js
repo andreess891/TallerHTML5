@@ -1,1 +1,1 @@
-var youRadioApp = angular.module('youRadio', ['ui.bootstrap','ui.router']);
+var preguntadosApp = angular.module('preguntados', ['ui.bootstrap','ui.router']);
